@@ -84,6 +84,7 @@ Open the site at [http://localhost:3000](http://localhost:3000)
     - Managed to get the application running!
     - Took too long trying to include Bootstrap styles. Was not able to successfully introduce a static layout because route to root component would not resolve. Not sure if this is an issue with running on Windows.
     - May consider launching on Heroku in the future
+    - Need to consider secure method to store and access API Key - may need to create separate backend service in Salesforce or using a backend Node.js server.
 
 ## Resources
 

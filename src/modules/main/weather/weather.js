@@ -17,7 +17,9 @@ export default class Weather extends LightningElement {
     }
 
     async getWeather() {
-        const apiKey = 'my-api-key'; // Need to get API key // Need to determine if there is a secure way to store key in project directory
+        const apiKey = 'your-api-key';  // NOTE: This is an insecure pattern that publicly exposes your API Key
+                                        // A safer pattern is to call a backend service that can call the API using the private credentials
+                                        // The backend service should employ CORS to restrict access to approved consumers
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${this.city}&appid=${apiKey}`;
         const response = await fetch(url);
         const data = await response.json();
