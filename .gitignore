@@ -1,0 +1,33 @@
+# 📦 Dependencies
+/node_modules
+node_modules
+
+# ⚙️ Build and Output Files
+/dist
+/build
+/lib
+/es
+/coverage
+
+# Cache
+/__lwr_cache__
+
+# 🔒 Environment and Credentials
+.env
+.local
+*.log
+*.pfx
+
+# 💻 Editor/IDE Specific Files (Commonly used in web dev/Salesforce)
+# Visual Studio Code
+.vscode/
+
+# IntelliJ / WebStorm / IDEA
+.idea
+*.iml
+*.iws
+*.ipr
+
+# Operating System Files
+.DS_Store
+Thumbs.db

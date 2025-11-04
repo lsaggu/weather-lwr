@@ -1,0 +1,74 @@
+<template>
+    <div class="weather-app container" style="width: 33.33vw;">
+        <div class="row text-center">
+            <div class="col mb-4">
+                <h1>Weather Report App</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="container">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col-8">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <form onsubmit={handleSubmit}>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="City..." aria-label="City" aria-describedby="city-submit-button" onchange={handleCityChange} value={city} minlength="3" required></input>
+                                                <button class="btn btn-outline-primary" type="submit" id="city-submit-button">Get Weather</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="card">
+                                        <div class="card-body weather-report">
+                                            <h4 class="card-title">Weather Report</h4>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        City
+                                                    </div>
+                                                    <div class="col">
+                                                        {city}                        
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        Temperature
+                                                    </div>
+                                                    <div class="col">
+                                                        {temperature}
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        Humidity
+                                                    </div>
+                                                    <div class="col">
+                                                        {humidity}
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        Description
+                                                    </div>
+                                                    <div class="col">
+                                                        {description}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+            </div>
+        </div>     
+    </div>
+</template>
